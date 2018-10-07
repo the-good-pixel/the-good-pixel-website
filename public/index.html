@@ -3,7 +3,7 @@
 <head>
     <!-- Title -->
     <title>The Good Pixel | 為NGO 提供免費科技咨詢</title>
-    
+
     <!-- Required Meta Tags Always Come First -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -115,7 +115,11 @@
         </div>
     </header>
     <!-- End Header -->
-
+    <!-- Revolution Slider -->
+    <!--<div class="g-overflow-hidden">-->
+    <!--<img src="assets/img-temp/1920x1080/img1.jpg" class="banner">-->
+    <!--</div>-->
+    <!-- End Revolution Slider -->
     <!-- About -->
     <div id="about-section" class="g-overflow-hidden">
         <div class="container g-pt-100">
@@ -128,21 +132,26 @@
                                 <h3 class="h6 text-uppercase g-color-main-light-v1 g-font-weight-600 g-letter-spacing-2 mb-3">
                                     Vision</h3>
                                 <h2 class="mb-4">Our Vision and Mission</h2>
-                                <p class="g-line-height-2">Our team is composed of young professionals with diverse expertises in technology, digital marketing, education, entrepreneurship and business consulting. Each of us are willing to take on real-life challenges and help NGOs in achieving operational excellence.</p>
+                                <p class="g-line-height-2">Our team is composed of young professionals with diverse
+                                    expertises in technology, digital marketing, education, entrepreneurship and
+                                    business consulting. Each of us are willing to take on real-life challenges and help
+                                    NGOs in achieving operational excellence.</p>
                             </div>
 
                             <!-- Icon Block -->
                             <div class="media mb-4">
                                 <div class="d-flex mr-4">
-                      <span class="u-icon-v3 g-width-50 g-height-50 g-color-bluegray g-bg-bluegray-opacity-0_1 g-font-size-16 rounded-circle">
-                        <i class="icon-communication-114 u-line-icon-pro"></i>
+                      <span class="u-icon-v3 g-width-50 g-height-50 g-color-primary g-bg-primary-opacity-0_1 g-font-size-16 rounded-circle">
+                        <!--<i class="icon-communication-114 u-line-icon-pro"></i>-->
+                        <img width="40px" src="assets/img/happy.svg"/>
                       </span>
 
 
                                 </div>
                                 <div class="media-body">
                                     <span class="g-font-weight-700">Volunteer technology skills</span>
-                                    <p class="g-text">Allow young professionals and students to volunteer their technology and consulting skills</p>
+                                    <p class="g-text">Allow young professionals and students to volunteer their
+                                        technology and consulting skills</p>
                                 </div>
                             </div>
                             <!-- End Icon Block -->
@@ -151,7 +160,8 @@
                             <div class="media mb-4">
                                 <div class="d-flex mr-4">
                       <span class="u-icon-v3 g-width-50 g-height-50 g-color-primary g-bg-primary-opacity-0_1 g-font-size-16 rounded-circle">
-                        <i class="icon-finance-091 u-line-icon-pro"></i>
+                        <!--<i class="icon-finance-091 u-line-icon-pro"></i>-->
+                        <img width="40px" src="assets/img/monitor.svg"/>
                       </span>
                                 </div>
                                 <div class="media-body">
@@ -165,12 +175,14 @@
                             <div class="media mb-4">
                                 <div class="d-flex mr-4">
                       <span class="u-icon-v3 g-width-50 g-height-50 g-color-red g-bg-red-opacity-0_1 g-font-size-16 rounded-circle">
-                        <i class="icon-communication-116 u-line-icon-pro"></i>
+                        <!--<i class="icon-communication-116 u-line-icon-pro"></i>-->
+                          <img width="40px" src="assets/img/bar-chart.svg"/>
                       </span>
                                 </div>
                                 <div class="media-body">
                                     <span class="g-font-weight-700">Long Term Effectively</span>
-                                    <p class="g-text">Boost the capacity of nonprofit organizations to thrive over the long term and effectively serve the community.</p>
+                                    <p class="g-text">Boost the capacity of nonprofit organizations to thrive over the
+                                        long term and effectively serve the community.</p>
                                 </div>
                             </div>
                             <!-- End Icon Block -->
@@ -178,7 +190,7 @@
                     </div>
 
                     <div class="col-lg-6 g-pos-abs--lg g-top-0--lg g-right-0--lg g-mb-30">
-                        <img class="w-100 g-width-auto--lg" src="assets/img/good-pixel-laptop.png"
+                        <img class="w-100 g-width-auto--lg" src="assets/img/hands-laptop.png"
                              alt="Image Description">
                     </div>
                 </div>
@@ -187,12 +199,20 @@
 
             <div class="g-pb-70 text-center">
                 <a class="btn call-for-action-btn u-btn-outline-primary g-font-weight-600 g-font-size-12 g-py-15 g-px-35"
-                   href="#">Join as a NGO</a>
+                   href="#">
+
+                    <img class="btn-icon" src="assets/img/building.svg"/>
+                    Join as a NGO
+                </a>
                 <a class="btn call-for-action-btn u-btn-outline-primary g-font-weight-600 g-font-size-12 g-py-15 g-px-35"
-                   href="#">Join as a Volunteer</a>
+                   href="#">
+
+                    <img class="btn-icon" src="assets/img/friend.svg"/>
+                    Join as a Volunteer
+                </a>
             </div>
 
-            
+
             <!-- Icon Blocks -->
             <ul class="row list-inline u-info-v9-1 g-pb-70 mb-0">
                 <li class="col-md-4 list-inline-item g-mx-0 g-mb-30">
@@ -815,127 +835,127 @@
 
 <!-- JS Plugins Init. -->
 <script>
-  $(document).on('ready', function () {
-    // initialization of carousel
-    $.HSCore.components.HSCarousel.init('.js-carousel');
+    $(document).on('ready', function () {
+        // initialization of carousel
+        $.HSCore.components.HSCarousel.init('.js-carousel');
 
-    // initialization of header
-    $.HSCore.components.HSHeader.init($('#js-header'));
-    $.HSCore.helpers.HSHamburgers.init('.hamburger');
+        // initialization of header
+        $.HSCore.components.HSHeader.init($('#js-header'));
+        $.HSCore.helpers.HSHamburgers.init('.hamburger');
 
-    // initialization of go to section
-    $.HSCore.components.HSGoTo.init('.js-go-to');
+        // initialization of go to section
+        $.HSCore.components.HSGoTo.init('.js-go-to');
 
-    // initialization of counters
-    var counters = $.HSCore.components.HSCounter.init('[class*="js-counter"]');
+        // initialization of counters
+        var counters = $.HSCore.components.HSCounter.init('[class*="js-counter"]');
 
-    // initialization of popups
-    $.HSCore.components.HSPopup.init('.js-fancybox');
-  });
-
-  $(window).on('load', function () {
-    // initialization of HSScrollNav
-    $.HSCore.components.HSScrollNav.init($('#js-scroll-nav'), {
-      duration: 700
+        // initialization of popups
+        $.HSCore.components.HSPopup.init('.js-fancybox');
     });
 
-    // initialization of cubeportfolio
-    $.HSCore.components.HSCubeportfolio.init('.cbp');
-  });
+    $(window).on('load', function () {
+        // initialization of HSScrollNav
+        $.HSCore.components.HSScrollNav.init($('#js-scroll-nav'), {
+            duration: 700
+        });
 
-  var tpj = jQuery;
+        // initialization of cubeportfolio
+        $.HSCore.components.HSCubeportfolio.init('.cbp');
+    });
 
-  var revapi1014;
-  tpj(document).ready(function () {
-    if (tpj("#rev_slider_1014_1").revolution == undefined) {
-      revslider_showDoubleJqueryError("#rev_slider_1014_1");
-    } else {
-      revapi1014 = tpj("#rev_slider_1014_1").show().revolution({
-        sliderType: "standard",
-        jsFileLocation: "revolution/js/",
-        sliderLayout: "fullscreen",
-        dottedOverlay: "none",
-        delay: 9000,
-        navigation: {
-          keyboardNavigation: "off",
-          keyboard_direction: "horizontal",
-          mouseScrollNavigation: "off",
-          mouseScrollReverse: "default",
-          onHoverStop: "off",
-          touch: {
-            touchenabled: "on",
-            swipe_threshold: 75,
-            swipe_min_touches: 1,
-            swipe_direction: "horizontal",
-            drag_block_vertical: false
-          },
-          arrows: {
-            style: "hermes",
-            enable: true,
-            hide_onmobile: true,
-            hide_under: 768,
-            hide_onleave: false,
-            tmp: '<div class="tp-arr-allwrapper"><div class="tp-arr-imgholder"></div><div class="tp-arr-titleholder">{{title}}</div></div>',
-            left: {
-              h_align: "left",
-              v_align: "center",
-              h_offset: 0,
-              v_offset: 0
-            },
-            right: {
-              h_align: "right",
-              v_align: "center",
-              h_offset: 0,
-              v_offset: 0
-            }
-          }
-        },
-        responsiveLevels: [1240, 1024, 778, 778],
-        gridwidth: [1240, 1024, 778, 480],
-        gridheight: [600, 500, 400, 300],
-        lazyType: 'smart',
-        scrolleffect: {
-          fade: "on",
-          grayscale: "on",
-          on_slidebg: "on",
-          on_parallax_layers: "on",
-          direction: "top",
-          multiplicator_layers: "1.4",
-          tilt: "10",
-          disable_on_mobile: "off",
-        },
-        parallax: {
-          type: "scroll",
-          origo: "slidercenter",
-          speed: 400,
-          levels: [5, 10, 15, 20, 25, 30, 35, 40, 45, 46, 47, 48, 49, 50, 51, 55],
-        },
-        shadow: 0,
-        spinner: "off",
-        stopLoop: 'off',
-        stopAfterLoops: -1,
-        stopAtSlide: -1,
-        shuffle: "off",
-        autoHeight: "off",
-        fullScreenAutoWidth: "off",
-        fullScreenAlignForce: "off",
-        fullScreenOffsetContainer: "",
-        fullScreenOffset: "0px",
-        hideThumbsOnMobile: "off",
-        hideSliderAtLimit: 0,
-        hideCaptionAtLimit: 0,
-        hideAllCaptionAtLilmit: 0,
-        debugMode: false,
-        fallbacks: {
-          simplifyAll: "off",
-          nextSlideOnWindowFocus: "off",
-          disableFocusListener: false,
+    var tpj = jQuery;
+
+    var revapi1014;
+    tpj(document).ready(function () {
+        if (tpj("#rev_slider_1014_1").revolution == undefined) {
+            revslider_showDoubleJqueryError("#rev_slider_1014_1");
+        } else {
+            revapi1014 = tpj("#rev_slider_1014_1").show().revolution({
+                sliderType: "standard",
+                jsFileLocation: "revolution/js/",
+                sliderLayout: "fullscreen",
+                dottedOverlay: "none",
+                delay: 9000,
+                navigation: {
+                    keyboardNavigation: "off",
+                    keyboard_direction: "horizontal",
+                    mouseScrollNavigation: "off",
+                    mouseScrollReverse: "default",
+                    onHoverStop: "off",
+                    touch: {
+                        touchenabled: "on",
+                        swipe_threshold: 75,
+                        swipe_min_touches: 1,
+                        swipe_direction: "horizontal",
+                        drag_block_vertical: false
+                    },
+                    arrows: {
+                        style: "hermes",
+                        enable: true,
+                        hide_onmobile: true,
+                        hide_under: 768,
+                        hide_onleave: false,
+                        tmp: '<div class="tp-arr-allwrapper"><div class="tp-arr-imgholder"></div><div class="tp-arr-titleholder">{{title}}</div></div>',
+                        left: {
+                            h_align: "left",
+                            v_align: "center",
+                            h_offset: 0,
+                            v_offset: 0
+                        },
+                        right: {
+                            h_align: "right",
+                            v_align: "center",
+                            h_offset: 0,
+                            v_offset: 0
+                        }
+                    }
+                },
+                responsiveLevels: [1240, 1024, 778, 778],
+                gridwidth: [1240, 1024, 778, 480],
+                gridheight: [600, 500, 400, 300],
+                lazyType: 'smart',
+                scrolleffect: {
+                    fade: "on",
+                    grayscale: "on",
+                    on_slidebg: "on",
+                    on_parallax_layers: "on",
+                    direction: "top",
+                    multiplicator_layers: "1.4",
+                    tilt: "10",
+                    disable_on_mobile: "off",
+                },
+                parallax: {
+                    type: "scroll",
+                    origo: "slidercenter",
+                    speed: 400,
+                    levels: [5, 10, 15, 20, 25, 30, 35, 40, 45, 46, 47, 48, 49, 50, 51, 55],
+                },
+                shadow: 0,
+                spinner: "off",
+                stopLoop: 'off',
+                stopAfterLoops: -1,
+                stopAtSlide: -1,
+                shuffle: "off",
+                autoHeight: "off",
+                fullScreenAutoWidth: "off",
+                fullScreenAlignForce: "off",
+                fullScreenOffsetContainer: "",
+                fullScreenOffset: "0px",
+                hideThumbsOnMobile: "off",
+                hideSliderAtLimit: 0,
+                hideCaptionAtLimit: 0,
+                hideAllCaptionAtLilmit: 0,
+                debugMode: false,
+                fallbacks: {
+                    simplifyAll: "off",
+                    nextSlideOnWindowFocus: "off",
+                    disableFocusListener: false,
+                }
+            });
         }
-      });
-    }
 
-    RsTypewriterAddOn(tpj, revapi1014);
-  });
+        RsTypewriterAddOn(tpj, revapi1014);
+    });
 </script>
 </body>
 </html>

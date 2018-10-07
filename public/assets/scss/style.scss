@@ -1,4 +1,44 @@
+@import "variables.op-consulting";
+
 .call-for-action-btn {
   width: 300px;
   margin: 20px;
+}
+
+.banner {
+  width: 100%;
+}
+
+.btn-icon {
+  width: 20px;
+  margin-right: 5px;
+  vertical-align: bottom;
+}
+
+/* Override styles */
+
+.u-header__section {
+  background-color: #ffffff !important;
+}
+
+.u-header__section .nav-link {
+  color: $g-color-main !important;
+}
+
+/* Outline Button Primary */
+.u-btn-outline-primary {
+  color: $g-color-btn-text;
+  background-color: $g-color-primary;
+}
+
+.u-btn-outline-primary:focus, .u-btn-outline-primary.active {
+  color: $g-color-primary;
+  border-color: $g-color-primary;
+  background-color: transparent;
+}
+
+.u-btn-outline-primary:hover {
+  color: $g-color-primary;
+  border-color: $g-color-primary;
+  background-color: transparent;
 }
