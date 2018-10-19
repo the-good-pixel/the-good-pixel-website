@@ -1,21 +1,40 @@
 @import "variables.op-consulting";
 
-.call-for-action-btn-1 {
-  width: 300px;
+.call-for-action-btn-1, .call-for-action-btn-1.active, .call-for-action-btn-1:hover {
+  //width: 350px;
   margin: 20px;
   font-size: 18px !important;
+  color: white;
   background-color: $g-color-primary !important;
 }
 
-.call-for-action-btn-2 {
-  width: 300px;
+.call-for-action-btn-1:hover {
+  color: $g-color-primary !important;
+  border-color: $g-color-primary !important;;
+  background-color: transparent !important;;
+}
+
+.call-for-action-btn-2, .call-for-action-btn-2.active, .call-for-action-btn-2:hover {
+  //width: 350px;
   margin: 20px;
   font-size: 18px !important;
+  color: white;
   background-color: $g-color-secondary !important;;
 }
 
+.call-for-action-btn-2:hover {
+  color: $g-color-secondary !important;;
+  border-color: $g-color-secondary !important;;
+  background-color: transparent !important;;
+}
+
+.vertical-align {
+  display: flex;
+  align-items: center;
+}
+
 .nav-logo {
-  width: 300px;
+  width: 250px;
 }
 
 .banner {
@@ -44,22 +63,4 @@
 
 .u-header__section .nav-item.active .nav-link {
   color: $g-color-secondary !important;
-}
-
-/* Outline Button Primary */
-.u-btn-outline-primary {
-  color: $g-color-btn-text;
-  background-color: $g-color-primary;
-}
-
-.u-btn-outline-primary:focus, .u-btn-outline-primary.active {
-  color: $g-color-primary;
-  border-color: $g-color-primary;
-  background-color: transparent;
-}
-
-.u-btn-outline-primary:hover {
-  color: $g-color-primary;
-  border-color: $g-color-primary;
-  background-color: transparent;
 }
