@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/the-good-pixel/the-good-pixel-website#readme",
   "devDependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-dom": "^0.9.17",
     "gulp-sass": "^4.0.1"
   }
 }
