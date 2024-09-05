@@ -1,7 +1,5 @@
 const gulp = require('gulp');
-const sass = require('gulp-sass');
-const dom = require('gulp-dom');
-const concat = require("gulp-concat");
+const sass = require('gulp-sass')(require('sass'));
 
 gulp.task('unify-core-sass', function () {
   return gulp.src('./public/unify-template-core-assets/include/scss/**/*.scss')
