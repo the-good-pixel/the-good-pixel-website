@@ -8,7 +8,8 @@
 </script>
 
 <svelte:head>
-	<title>GoodPixel.AI - AI & Software Solutions</title>
+	<title>GoodPixel.AI - Industry-Driven AI Solutions</title>
+	<meta name="description" content="We specialize in vertical AI and industry-specific solutions for manufacturing, logistics, and healthcare. Custom software, AI systems, and robotics tailored to your industry's unique challenges." />
 </svelte:head>
 
 <div class="min-h-screen font-sans">
@@ -104,6 +105,23 @@
 					icon="🤖"
 					color="red"
 				/>
+			</div>
+		</div>
+	</section>
+
+	<!-- Contact Section -->
+	<section class="py-24 bg-neo-white border-b-4 border-neo-black" id="contact">
+		<div class="container mx-auto px-6">
+			<div class="max-w-4xl mx-auto">
+				<h2 class="text-4xl md:text-5xl font-bold mb-6">Contact Us</h2>
+				<p class="text-lg text-gray-700 leading-relaxed mb-8">
+					Ready to transform your industry with custom AI and technology solutions?
+					Let's discuss how we can help solve your unique challenges.
+				</p>
+				<a href="mailto:info@goodpixel.ai" class="btn-brutal bg-neo-yellow inline-block mb-3">
+					Get in Touch
+				</a>
+				<p class="text-sm text-gray-500">Or email us directly at info@goodpixel.ai</p>
 			</div>
 		</div>
 	</section>
