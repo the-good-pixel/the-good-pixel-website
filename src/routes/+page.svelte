@@ -27,19 +27,19 @@
 	</header>
 
 	<!-- Hero Section -->
-	<section class="relative bg-gradient-to-br from-neo-yellow to-neo-blue border-b-4 border-neo-black overflow-hidden min-h-[calc(100vh-5rem)] flex items-center">
+	<section class="relative bg-linear-to-br from-neo-yellow to-neo-blue border-b-4 border-neo-black overflow-hidden min-h-[calc(100vh-5rem)] flex items-center">
 		<div class="absolute inset-0 z-0">
 			<GameOfLifeBackground />
 		</div>
 		<!-- Semi-transparent overlay for better text readability -->
 		<div class="absolute inset-0 bg-white/30 z-10"></div>
 		<div class="container mx-auto px-6 relative z-20">
-			<div class="max-w-3xl">
+			<div class="max-w-4xl mx-auto text-center">
 				<div class="inline-block bg-neo-black text-neo-white px-4 py-2 mb-6 border-4 border-neo-black font-mono text-sm">
 					GOODPIXEL.AI
 				</div>
 				<h1 class="text-4xl md:text-7xl font-bold mb-6 leading-tight">
-					Industry-Driven AI, Software, and Hardware Solutions.
+					Industry-Driven Solutions
 				</h1>
 				<p class="text-xl md:text-2xl mb-8 text-gray-800">
 					We build vertical AI and custom technology solutions tailored to your industry's unique challenges. From manufacturing automation to domain-specific intelligence systems.
