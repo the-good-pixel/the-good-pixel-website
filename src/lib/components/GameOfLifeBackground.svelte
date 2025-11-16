@@ -128,13 +128,17 @@
 	function animate() {
 		frameCount++;
 
-		// Only update grid if not fading
-		if (frameCount % FRAME_DELAY === 0 && !isFading) {
+		// Update grid if not fading out (allow updates during fade-in)
+		if (frameCount % FRAME_DELAY === 0 && fadeDirection !== 'out') {
 			updateGrid();
+			generationCount++;
 		}
 
 		handleFadeTransition();
+
+		// Always render (opacity controls visibility)
 		render();
+
 		animationId = requestAnimationFrame(animate);
 	}
 
@@ -142,9 +146,11 @@
 	let staticFrames = 0;
 	let startTime = Date.now();
 	const MAX_TIME_BEFORE_RESET = 10000; // 10 seconds
-	let fadeOpacity = 1;
-	let isFading = false;
-	let fadeDirection: 'out' | 'in' = 'out';
+	let fadeOpacity = 0; // Start from 0 opacity
+	let isFading = true; // Start in fading state
+	let fadeDirection: 'out' | 'in' = 'in'; // Start with fade in
+	let generationCount = 0;
+	const MIN_GENERATIONS_BEFORE_RENDER = 1; // Skip first generation for cleaner start
 
 	function checkAndReset() {
 		if (!grid || !canvas || isFading) return;
@@ -183,16 +189,20 @@
 				// Reset the grid data (cells will be reinitialized)
 				staticFrames = 0;
 				lastLivingCount = 0;
+				generationCount = 0; // Reset generation counter
 				startTime = Date.now();
 				initializeGrid(canvas.width, canvas.height);
-				// Start fade in with new pattern
+				// Switch to fade in direction
 				fadeDirection = 'in';
 			}
 		} else {
-			fadeOpacity += 0.03;
-			if (fadeOpacity >= 1) {
-				fadeOpacity = 1;
-				isFading = false;
+			// Only fade in after minimum generations have passed
+			if (generationCount >= MIN_GENERATIONS_BEFORE_RENDER) {
+				fadeOpacity += 0.03;
+				if (fadeOpacity >= 1) {
+					fadeOpacity = 1;
+					isFading = false;
+				}
 			}
 		}
 	}
@@ -202,6 +212,7 @@
 		const rect = canvas.parentElement.getBoundingClientRect();
 		canvas.width = rect.width || window.innerWidth;
 		canvas.height = rect.height || window.innerHeight;
+		generationCount = 0; // Reset generation counter on resize
 		initializeGrid(canvas.width, canvas.height);
 		console.log('Canvas resized:', canvas.width, 'x', canvas.height);
 	}
