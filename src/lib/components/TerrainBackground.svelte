@@ -1,6 +1,9 @@
 <script lang="ts">
 	import { onMount, onDestroy } from 'svelte';
 
+	// Optional prop for vertical offset
+	export let topOffset = 0;
+
 	let canvas: HTMLCanvasElement;
 	let ctx: CanvasRenderingContext2D;
 	let animationId: number;
@@ -114,7 +117,7 @@
 			ctx.beginPath();
 			for (let x = 0; x < COLS; x++) {
 				const px = x * scaleX;
-				const py = y * scaleY - terrain[y][x] * 0.5; // 3D height effect
+				const py = y * scaleY - terrain[y][x] * 0.5 + topOffset; // 3D height effect with top offset
 
 				if (x === 0) {
 					ctx.moveTo(px, py);
@@ -130,7 +133,7 @@
 			ctx.beginPath();
 			for (let y = 0; y < ROWS; y++) {
 				const px = x * scaleX;
-				const py = y * scaleY - terrain[y][x] * 0.5;
+				const py = y * scaleY - terrain[y][x] * 0.5 + topOffset;
 
 				if (y === 0) {
 					ctx.moveTo(px, py);
