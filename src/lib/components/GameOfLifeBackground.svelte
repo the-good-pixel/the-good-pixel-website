@@ -250,5 +250,5 @@
 	bind:this={canvas}
 	class="absolute inset-0 w-full h-full"
 	aria-hidden="true"
-	style="opacity: 0.5;"
+	style="opacity: 0.5; touch-action: none; pointer-events: none;"
 ></canvas>
